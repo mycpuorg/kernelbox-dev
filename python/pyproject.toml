@@ -1,0 +1,19 @@
+[project]
+name = "kernelbox"
+version = "0.1.0"
+description = "Iterate-only CUDA kernel development toolkit"
+requires-python = ">=3.10"
+dependencies = [
+    "cuda-python",
+    "numpy",
+    "h5py",
+    "torch",
+]
+
+[project.optional-dependencies]
+mcp = ["mcp>=1.26.0"]
+triton = ["triton"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

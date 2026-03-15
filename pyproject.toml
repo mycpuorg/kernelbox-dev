@@ -1,0 +1,12 @@
+[project]
+name = "kernelbox-workspace"
+version = "0.0.0"
+requires-python = ">=3.10"
+dependencies = [
+    "kernelbox",
+    "mcp>=1.26.0",
+    "triton",
+]
+
+[tool.uv.sources]
+kernelbox = { path = "python", editable = true }

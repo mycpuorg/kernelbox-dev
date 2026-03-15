@@ -1,0 +1,32 @@
+# Build artifacts (all go to build/)
+build/
+
+# Compiler intermediates (shouldn't exist outside build/, but just in case)
+*.o
+*.d
+*.i
+*.ii
+*.gpu
+*.ptx
+*.cubin
+*.fatbin
+
+# Python / uv
+__pycache__/
+*.egg-info/
+*.egg
+.pytest_cache/
+*.pyc
+dist/
+.venv/
+
+# IDE / editor
+compile_commands.json
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
