@@ -460,11 +460,12 @@ dependencies = [
 requires-dist = [
     { name = "cuda-python" },
     { name = "h5py" },
+    { name = "mcp", marker = "extra == 'mcp'", specifier = ">=1.26.0" },
     { name = "numpy" },
     { name = "torch" },
     { name = "triton", marker = "extra == 'triton'" },
 ]
-provides-extras = ["triton"]
+provides-extras = ["mcp", "triton"]
 
 [[package]]
 name = "kernelbox-workspace"
